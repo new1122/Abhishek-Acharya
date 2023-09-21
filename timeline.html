@@ -14,8 +14,8 @@
         <ul class="nameplate" style="font-size: 21px; font-family: cursive;">
             <li>Acharya Abhishek Manishkumar</li>
         </ul>
-        <ul style="font-size: 17px;">
-            <a href="index1.html" style="text-decoration: none; color: black;">
+        <ul style="font-size: 17px;" class="lists">
+            <a href="index.html" style="text-decoration: none; color: black;">
                 <li>Home</li>
             </a>
             <li>About Me</li>
@@ -28,8 +28,7 @@
     </div>
     </div>
 
-    <hr style="margin-top: 8%; position:sticky;" id="hr1">
-    </hr>
+    <hr style="margin-top: 8%; position:sticky;" id="hr1"></hr>
     <table id="table1">
 
 
@@ -37,9 +36,9 @@
 
         <tr>
             <td class="content">
-                <h1 style="font-size: 45px;">2022</h1><br>
-                <h2 style="font-size: 40px;">December 2022</h2> <br>
-                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <p class="year" >2022</p><br>
+                <p class="month" >December 2022</p> <br>
+                <p class="detailed" >Janoi 2022...</p> <br>
                 <button class="btn1" onclick="myFunction()">Click to See Photos</button>
             </td>
             <td>
@@ -90,9 +89,9 @@
                 <img src="recent/recent1.jpg" class="imagefortimeline2" alt="">
             </td>
             <td class="content2">
-                <h1 style="font-size: 45px;">2021</h1><br>
-                <h2 style="font-size: 40px;">Month 2021</h2> <br>
-                <h3 style="font-size: 34px;">Function 2021...</h3> <br>
+                <p class="year">2021</p><br>
+                <p class="month">Month 2021</p> <br>
+                <p class="detailed">Function 2021...</p> <br>
                 <button class="btn1" onclick="myFunction1()">Click to See Photos</button>
             </td>
 
@@ -134,9 +133,9 @@
 
         <tr>
             <td class="content">
-                <h1 style="font-size: 45px;">2022</h1><br>
-                <h2 style="font-size: 40px;">December 2022</h2> <br>
-                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <p class="year">2022</p><br>
+                <p class="month">December 2022</p> <br>
+                <p class="detailed">Janoi 2022...</p> <br>
                 <button class="btn1">Click to See Photos</button>
             </td>
             <td>
@@ -148,19 +147,12 @@
                 <img src="recent/recent1.jpg" class="imagefortimeline2" alt="">
             </td>
             <td class="content2">
-                <h1 style="font-size: 45px;">2022</h1><br>
-                <h2 style="font-size: 40px;">December 2022</h2> <br>
-                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <p class="year">2022</p><br>
+                <p class="month">December 2022</p> <br>
+                <p class="detailed">Janoi 2022...</p> <br>
                 <button class="btn1">Click to See Photos</button>
             </td>
-
         </tr>
-
-
-
-
-
-
     </table>
 
 </body>
@@ -214,32 +206,33 @@
         } else {
             z1.style.display = "block";
         }
+    
     }
     function myFunction1() {
-        var x = document.getElementById("myDIV1");
-        if (x.style.display === "block") {
-            x.style.display = "none";
+        var x1 = document.getElementById("myDIV1");
+        if (x1.style.display === "none") {
+            x1.style.display = "block";
         } else {
-            x.style.display = "block";
+            x1.style.display = "none";
         }
-        var y = document.getElementById("table1");
-        if (y.style.display === "block") {
-            y.style.display = "none";
+        var y1 = document.getElementById("table1");
+        if (y1.style.display === "block") {
+            y1.style.display = "none";
         } else {
-            y.style.display = "block";
+            y1.style.display = "block";
         }
 
-        var z = document.getElementById("nav");
-        if (z.style.display === "block") {
-            z.style.display = "none";
+        var z2 = document.getElementById("nav");
+        if (z2.style.display === "block") {
+            z2.style.display = "none";
         } else {
-            z.style.display = "block";
+            z2.style.display = "block";
         }
-        var z1 = document.getElementById("hr1");
-        if (z1.style.display === "block") {
-            z1.style.display = "none";
+        var z3 = document.getElementById("hr1");
+        if (z3.style.display === "block") {
+            z3.style.display = "none";
         } else {
-            z1.style.display = "block";
+            z3.style.display = "block";
         }
     }
 </script>
